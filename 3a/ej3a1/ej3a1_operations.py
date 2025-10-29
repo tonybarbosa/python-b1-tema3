@@ -3,19 +3,22 @@
 
 def add(num_1: float, num_2: float) -> float:
     # Write here your code
-    pass
+    return num_1 + num_2
 
 
 def subtract(num_1: float, num_2: float) -> float:
     # Write here your code
-    pass
+    return num_1 - num_2
 
 
 def multiply(num_1: float, num_2: float) -> float:
     # Write here your code
-    pass
+    return num_1 * num_2
 
 
 def divide(num_1: float, num_2: float) -> float:
     # Write here your code
-    pass
+    if num_2 != 0:
+        return num_1 / num_2
+    else:
+        raise ZeroDivisionError("Division by zero is not allowed")
